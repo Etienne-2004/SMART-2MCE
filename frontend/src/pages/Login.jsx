@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Lock, Mail, ArrowRight, UserCheck } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Footer from '../components/Footer';
 
 const Login = ({ setAuth }) => {
   const [email, setEmail] = useState('');
@@ -137,9 +138,7 @@ const Login = ({ setAuth }) => {
         </motion.div>
       </div>
 
-      <footer style={{ padding: '2rem 4rem', textAlign: 'center', color: 'rgba(255,255,255,0.3)', fontSize: '0.8rem' }}>
-         SMART-2MCE © 2026 ALL RIGHTS RESERVED • OFFICIAL HUB RWANDA
-      </footer>
+      <Footer />
     </div>
   );
 };

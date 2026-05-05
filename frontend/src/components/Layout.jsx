@@ -4,6 +4,7 @@ import {
   LayoutDashboard, Monitor, Package, ClipboardList, ShoppingCart, 
   Bell, BarChart3, Settings, LogOut, BookOpen, AlertCircle, Phone, Mail, MapPin
 } from 'lucide-react';
+import Footer from './Footer';
 
 const Layout = ({ children, setAuth }) => {
   const navigate = useNavigate();
@@ -161,57 +162,9 @@ const Layout = ({ children, setAuth }) => {
           {children}
         </main>
 
-        {/* Professional Multi-Column Footer */}
-        <footer style={{ 
-          background: '#1a1c2c', 
-          color: 'white', 
-          padding: '5rem 3rem 2rem', 
-          marginTop: '6rem', 
-          borderRadius: '12px 12px 0 0',
-          marginLeft: '-2.5rem',
-          marginRight: '-2.5rem'
-        }}>
-           <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1.5fr', gap: '4rem', marginBottom: '4rem' }}>
-              <div>
-                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
-                    <img src="/logo.png" alt="Logo" style={{ width: '40px', height: '40px' }} />
-                    <h4 style={{ fontSize: '1.25rem', fontWeight: 900, margin: 0 }}>SMART-2MCE</h4>
-                 </div>
-                 <p style={{ fontSize: '0.85rem', opacity: 0.6, lineHeight: 1.8 }}>
-                    Official Rwanda National Maintenance Ecosystem. Providing elite connectivity and management for institutions nationwide.
-                 </p>
-              </div>
-              <div>
-                 <h5 style={{ fontSize: '0.8rem', fontWeight: 900, color: '#f9a825', marginBottom: '1.5rem', textTransform: 'uppercase' }}>Navigation</h5>
-                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '1rem', fontSize: '0.8rem', opacity: 0.7 }}>
-                    <li><NavLink to="/dashboard" style={{ color: 'white', textDecoration: 'none' }}>Overview</NavLink></li>
-                    <li><NavLink to="/devices" style={{ color: 'white', textDecoration: 'none' }}>Devices</NavLink></li>
-                    <li><NavLink to="/requests" style={{ color: 'white', textDecoration: 'none' }}>Requests</NavLink></li>
-                 </ul>
-              </div>
-              <div>
-                 <h5 style={{ fontSize: '0.8rem', fontWeight: 900, color: '#f9a825', marginBottom: '1.5rem', textTransform: 'uppercase' }}>Resources</h5>
-                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '1rem', fontSize: '0.8rem', opacity: 0.7 }}>
-                    <li>User Manuals</li>
-                    <li>SLA Hub</li>
-                    <li>Privacy</li>
-                 </ul>
-              </div>
-              <div>
-                 <h5 style={{ fontSize: '0.8rem', fontWeight: 900, color: '#f9a825', marginBottom: '1.5rem', textTransform: 'uppercase' }}>Connect Hub</h5>
-                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', fontSize: '0.8rem', opacity: 0.8 }}>
-                    <div style={{ display: 'flex', gap: '0.75rem' }}><Phone size={16} /> +250 793 719 131</div>
-                    <div style={{ display: 'flex', gap: '0.75rem' }}><Mail size={16} /> support@smart-2mce.rw</div>
-                    <div style={{ display: 'flex', gap: '0.75rem' }}><MapPin size={16} /> Kigali, Rwanda</div>
-                 </div>
-              </div>
-           </div>
-           <div style={{ borderTop: '1px solid rgba(255,255,255,0.05)', paddingTop: '2rem', textAlign: 'center' }}>
-              <p style={{ opacity: 0.4, fontSize: '0.7rem', margin: 0 }}>
-                 SMART-2MCE © 2026 OFFICIAL HUB RWANDA • BUILT BY ETIENNE HARINDINTWARI
-              </p>
-           </div>
-        </footer>
+        <div style={{ marginTop: '6rem', marginLeft: '-2.5rem', marginRight: '-2.5rem' }}>
+          <Footer />
+        </div>
       </div>
     </div>
   );
