@@ -28,7 +28,8 @@ const Login = ({ setAuth }) => {
       minHeight: '100vh', 
       display: 'flex', 
       flexDirection: 'column',
-      background: 'rgba(26, 28, 44, 0.95)',
+      background: 'linear-gradient(rgba(26, 28, 44, 0.85), rgba(26, 28, 44, 0.85)), url("/convention-bg.jpg") no-repeat center center fixed',
+      backgroundSize: 'cover',
       position: 'relative',
       overflow: 'hidden'
     }}>

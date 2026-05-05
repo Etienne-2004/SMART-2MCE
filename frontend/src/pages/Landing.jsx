@@ -7,7 +7,7 @@ const Landing = () => {
   const navigate = useNavigate();
 
   return (
-    <div style={{ minHeight: '100vh', background: 'transparent', display: 'flex', flexDirection: 'column' }}>
+    <div style={{ minHeight: '100vh', background: 'url("/convention-bg.jpg") no-repeat center center fixed', backgroundSize: 'cover', display: 'flex', flexDirection: 'column' }}>
       {/* Official Header Area */}
       <section style={{ background: 'rgba(26, 28, 44, 0.8)', backdropFilter: 'blur(8px)', padding: '6rem 4rem', color: 'white', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div style={{ flex: 1 }}>
