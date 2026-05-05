@@ -27,7 +27,7 @@ const Layout = ({ children, setAuth }) => {
   ];
 
   return (
-    <div className="layout-wrapper" style={{ background: 'transparent' }}>
+    <div className="layout-wrapper" style={{ background: '#f0f4f8' }}>
       {/* Official Header */}
       <header className="navbar">
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', width: '240px' }}>
